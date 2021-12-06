@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.12.3)  5 DEC 2021 09:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.12.6)  6 DEC 2021 11:05
 entering extended mode
 **./Seminar_report.tex
 (Seminar_report.tex
@@ -105,8 +105,8 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 13.
  [1
 
-{C:/Users/sanke/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] (Seminar_report
-.toc
+{C:/Users/Vaibhav/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] (Seminar_repo
+rt.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 4.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -117,8 +117,8 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \tf@toc=\write3
 \openout3 = `Seminar_report.toc'.
 
- [2]
-[3]
+
+[2] [3]
 <react_trends.png, id=14, 1087.81406pt x 557.83406pt>
 File: react_trends.png Graphic file (type png)
 <use react_trends.png>
@@ -365,10 +365,90 @@ Underfull \hbox (badness 10000) in paragraph at lines 102--115
 
  []
 
-[8] (Seminar_report.aux) ) 
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 123--124
+[]|\OT1/cmr/m/n/12 Future
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--125
+[]|\OT1/cmr/m/n/12 Exploration
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--125
+\OT1/cmr/m/n/12 tive Frame-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--125
+\OT1/cmr/m/n/12 work in
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--125
+\OT1/cmr/m/n/12 de-sign-ing a
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--125
+\OT1/cmr/m/n/12 Rule-Based
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--125
+\OT1/cmr/m/n/12 Ap-pli-ca-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--125
+\OT1/cmr/m/n/12 for healthy
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--125
+\OT1/cmr/m/n/12 lifestyle
+ []
+
+
+Underfull \hbox (badness 6675) in paragraph at lines 125--125
+\OT1/cmr/m/n/12 i-fatul Az-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--125
+[]|\OT1/cmr/m/n/12 IEEE
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--126
+[]|\OT1/cmr/m/n/12 Lifestyle
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--126
+\OT1/cmr/m/n/12 and Ed-u-
+ []
+
+
+Overfull \hbox (29.42093pt too wide) in paragraph at lines 120--133
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 120--133
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 120--133
+
+ []
+
+[9] (Seminar_report.aux) ) 
 Here is how much of TeX's memory you used:
  1292 strings out of 478927
- 19538 string characters out of 2862392
+ 19648 string characters out of 2862386
  315891 words of memory out of 3000000
  19181 multiletter control sequences out of 15000+600000
  408598 words of font info for 44 fonts, out of 8000000 for 9000
@@ -377,9 +457,9 @@ Here is how much of TeX's memory you used:
 <C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/
 cm/cmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb
 ><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on Seminar_report.pdf (8 pages, 119249 bytes).
+Output written on Seminar_report.pdf (9 pages, 121950 bytes).
 PDF statistics:
- 45 PDF objects out of 1000 (max. 8388607)
+ 48 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
