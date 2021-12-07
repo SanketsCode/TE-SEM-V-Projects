@@ -6,3 +6,6 @@
 \contentsline {subsection}{Mobile Development in Swift, Java and React Native}{7}{}%
 \contentsline {subsection}{JavaScript in Mobile Applications: React native vs Ionic vs NativeScript vs Native Development}{8}{}%
 \contentsline {subsection}{Exploration of React Native Framework in designing a Rule-Based Application for healthy lifestyle education}{9}{}%
+\contentsline {section}{Problem Statement}{10}{}%
+\contentsline {subsection}{What is Problem?}{10}{}%
+\contentsline {subsection}{How React Native is Works?}{11}{}%
