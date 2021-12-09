@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.11.29)  7 DEC 2021 21:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.11.29)  9 DEC 2021 09:53
 entering extended mode
 **./Seminar_report.tex
 (Seminar_report.tex
@@ -445,22 +445,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 120--133
 
  []
 
-[9] [10] [11] [12] (Seminar_report.aux) ) 
+[9] [10] [11] (Seminar_report.aux) ) 
 Here is how much of TeX's memory you used:
  1292 strings out of 478927
  19643 string characters out of 2862388
- 317893 words of memory out of 3000000
+ 315893 words of memory out of 3000000
  19181 multiletter control sequences out of 15000+600000
  408598 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,8n,66p,2086b,235s stack positions out of 5000i,500n,10000p,200000b,80000s
-<C:/Program Files/MiKTeX/fonts/type1/p
-ublic/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfon
-ts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.p
-fb>
-Output written on Seminar_report.pdf (12 pages, 129297 bytes).
+<C:/Program Files/MiKTeX/fonts/type1/public
+/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm
+/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb>
+Output written on Seminar_report.pdf (11 pages, 126389 bytes).
 PDF statistics:
- 57 PDF objects out of 1000 (max. 8388607)
+ 54 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

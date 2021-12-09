@@ -8,5 +8,4 @@
 \contentsline {subsection}{Exploration of React Native Framework in designing a Rule-Based Application for healthy lifestyle education}{9}{}%
 \contentsline {section}{Problem Statement}{10}{}%
 \contentsline {subsection}{What is Problem?}{10}{}%
-\contentsline {subsection}{How React Native is Works?}{11}{}%
-\contentsline {subsection}{React Native can Solve our Problem?}{12}{}%
+\contentsline {subsection}{React Native can Solve our Problem?}{11}{}%
