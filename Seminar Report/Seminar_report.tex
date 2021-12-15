@@ -1,48 +1,86 @@
-\documentclass[12pt,a4paper]{article}
-\usepackage{graphicx}
+\documentclass[12pt,a4paper]{report}
+\usepackage[top=1cm, bottom=1cm, left=3cm, right=1cm]{geometry}
+\usepackage{setspace}
+\onehalfspacing
+\usepackage {subfigure}
+\usepackage {acronym}
+\usepackage{multirow}
+%\usepackage{psfrag}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{anysize}
 \usepackage{array}
+\usepackage{tabularx}
+\usepackage{bbm}
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
 \graphicspath{ {/} }
-\title{Cross-Plaform Application Development using React Native}
-\author{ Sanket Sabale }
-%\date
 
 
 \begin{document}
 
+\newpage 
+\pagenumbering{arabic}
 
-\maketitle
-\newpage
+
+%%%%%%%%%%%%%%%% HEADERS N FOOTERS %%%%%%%%%%%%%%%%%%%
+\setlength{\headheight}{20pt}
+ 
+\pagestyle{fancyplain}
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+ 
+\lhead{\fancyplain{}}
+\chead{}
+\rhead{\fancyplain{}{\textit{\leftmark}}}
+\lfoot{}
+%\cfoot{\thepage\ of \pageref{LastPage}}
+\cfoot{\thepage}
+\rfoot{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \tableofcontents
 \newpage
 
+\chapter*{\centering Abstract}
 
 
-
-\section*{Abstract}
-
- React Native is an Open-Source UI software Framework created by Meta Platforms, in 2015. It is Used to Develop Applications for Android and IOS By enabling developers to use React Framework along with native platform capabilities. It is also being used to develop virtual reality applications at Oculus. The Working Principle of React native are virtually identical to React except that React Native does not manipulate the DOM via the Virtual DOM. It runs in a background process (which  interprets the JavaScript written by the developers ) directly on the end-device and communicates with the native platform via serialized data over an asynchronous and batched bridge. React Components wrap existing native code and interact with native API’s via React’s declarative UI paradigm and JavaScript. While React native styling has a similar sytax to css it does not use HTML or CSS. Instead, messages from the JavaScript thread are used to manipulate native views. React Native also allows developers to write native code in languages such as Java or kotlin for Android, objective-c or swift for ios, and C++/WinRT or  for Windows 10, Which makes it even more flexible Microsoft builds and maintain React Native for windows and React native for macOs.
-
-\addcontentsline{toc}{section}{Abstract}
+React Native is an Open-Source UI software Framework created by Meta Platforms, in 2015. It is Used to Develop Applications for Android and IOS By enabling developers to use React Framework along with native platform capabilities. It is also being used to develop virtual reality applications at Oculus. The Working Principle of React native are virtually identical to React except that React Native does not manipulate the DOM via the Virtual DOM. It runs in a background process (which  interprets the JavaScript written by the developers ) directly on the end-device and communicates with the native platform via serialized data over an asynchronous and batched bridge. React Components wrap existing native code and interact with native API’s via React’s declarative UI paradigm and JavaScript. While React native styling has a similar sytax to css it does not use HTML or CSS. Instead, messages from the JavaScript thread are used to manipulate native views. React Native also allows developers to write native code in languages such as Java or kotlin for Android, objective-c or swift for ios, and C++/WinRT or  for Windows 10, Which makes it even more flexible Microsoft builds and maintain React Native for windows and React native for macOs.
 
 \newpage
 
-\section*{Motivation}
+\chapter{INTRODUCTION}
+\section{Introduction}
 
-Today React Native is Accepted By Many Different Companies and They are Hiring React Native Developers . \\
+\hspace{0.5cm} React Native has been successfully adopted by hundreds of businesses worldwide, including Uber, Microsoft, and Facebook, and is used across a whole range of industries. React Native (also known as RN) is a popular JavaScript-based mobile app framework that allows you to build natively-rendered mobile apps for iOS and Android. The framework lets you create an application for various platforms by using the same codebase. React Native was first released by Facebook as an open-source project in 2015. In just a couple of years, it became one of the top solutions used for mobile development. React Native development is used to power some of the world’s leading mobile apps, including Instagram, Facebook, and Skype. We discuss these and other examples of React Native-powered apps further in this post. When Facebook first decided to make its service available on mobile devices, instead of building out a native app like many top tech players at the time, they decided to run with a mobile webpage based on HTML5. However, the solution didn’t stand the test of time, leaving much room for UI and performance improvements. In fact, in 2012, Mark Zuckerberg admitted that “the biggest mistake we made as a company was betting too much on HTML as opposed to native.”
+
+\section{Scope of work}
+\hspace{0.5cm} A React Native developer is a highly skilled individual who can create well-structured front-end architecture, APIs, and can also write reusable, and scalable JavaScript codes. A clear and comprehensive React Native developer job description helps you attract highly skilled engineers to your organization. From making visualizations that can render huge quantities of data to engineer web applications, a skilled React Native developer can handle them all. Companies that wish to have developers who could help them in creating user-facing software solutions, adding new features, and fixing problems must hire the best React Native developer. For now there are typescript is language to write a code in React Native used by many developers so it Basically means React native developers have great future with more resposibilities.
+
+
+
+
+\section{Motivation}
+\hspace{0.5cm} Today React Native is Accepted By Many Different Companies and They are Hiring React Native Developers . \\
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.55\textwidth]{react_trends}
+    \includegraphics[width=0.85\textwidth]{react_trends}
 \end{figure}
 \\
- \qquad Also React Native is doing a greate job to beat the other alternatives.We all know that Android users are huge as compare to another platforms and thats why there are millions of apps are downloaded every day so demand of an android developers are really big so if you are wanted to become an android developer you need to pick a perticular android technology but if you have knowledge of web development like JS,HTML,CSS and ReactJS You can Continue with it and you can master these development with React Native. It is a Greate Platform who can give you authority to write code once and make or convert it in IOS and Android App so you don't need to write code for android and ios differently so the big problem are going to be fixed up here. React Native is really gone to easy who are in web development you can connect any backend framework to the android app which is build with react native also there are few other tech as well where you can connect backend but in react native it is easy to connect.
+Also React Native is doing a greate job to beat the other alternatives.We all know that Android users are huge as compare to another platforms and thats why there are millions of apps are downloaded every day so demand of an android developers are really big so if you are wanted to become an android developer you need to pick a perticular android technology but if you have knowledge of web development like JS,HTML,CSS and ReactJS You can Continue with it and you can master these development with React Native. It is a Greate Platform who can give you authority to write code once and make or convert it in IOS and Android App so you don't need to write code for android and ios differently so the big problem are going to be fixed up here. React Native is really gone to easy who are in web development you can connect any backend framework to the android app which is build with react native also there are few other tech as well where you can connect backend but in react native it is easy to connect.
 
-\addcontentsline{toc}{section}{Motivation}
 \newpage
 
-\section*{Literature Survey}
-\addcontentsline{toc}{section}{Literature Survey}
-\subsection*{React Native Based Mobile App for Online Experimentation}
-\addcontentsline{toc}{subsection}{React Native Based Mobile App for Online Experimentation}
+\chapter{Literature Survey}
+
+\begin{enumerate}
+	 {\bf\item  Xingwei Zhou,\lq\lq React Native Based Mobile App for Online Experimentation: Helps Student To  get Practicle Exprerince Through 3D\rq\rq,IEEE, 2020}\\
+\\
 \begin{tabular}{ |c | m{2.5cm} | m{2cm}| c | m{2cm} | m{2cm} | c | }
 
   \hline
@@ -54,14 +92,14 @@ Today React Native is Accepted By Many Different Companies and They are Hiring R
 \end{tabular}
 \\
 \\
-\\
 In These Article We Found That Author is Telling us That How a Laboratory can be an online tool for everyones use by react native so basically The Concept is there are so many collages which don't have 
-practical lab so we can create an app for those student so that he can practice on 3D images and Touchable Effects its looks similar to real practice in it so we can solve a problem of Practical labs in all collages but there some things That i like to update is that we can improve thos UI for students and every single branch needs there own space for practice it also we can include some of test exams so that teacher can see knowledge of student or What he gain? so far.
-\\
-\\
+practical lab so we can create an app for those student so that he can practice on 3D images and Touchable Effects its looks similar to real practice in it so we can solve a problem of Practical labs in all collages but there some things That i like to update is that we can improve thos UI for students and every single branch needs there own space for practice it also we can include some of test exams so that teacher can see knowledge of student or What he gain? so far. 
+
 \newpage
-\subsection*{React Native Supplements}
-\addcontentsline{toc}{subsection}{React Native Supplements}
+
+
+{\bf\item Paul,\lq\lq React Native Supplements : Best Guide for Developers who try to create Custom Components\rq\rq,Springer,2019}\\
+
 \begin{tabular}{ |c | m{2.5cm} | m{2cm}| c | m{2cm} | m{2cm} | c | }
 
  \hline
@@ -73,14 +111,14 @@ practical lab so we can create an app for those student so that he can practice 
 \end{tabular}
 \\
 \\
+
+ These Article is written for help to understand the backend code of React Native. In these Reflux Patterns are explained in very different and Easier manar so that if react native developers whants to implement somethings they get help from these pattern not only these article also tells about Redux the big state management tools to manage states Many of the industries are actually working on it.
+So These Articles also tells about how to use redux? How the you can debugg your apps in android phone using deugging mode. But we can implement some libraries for easy development and we can import statements to import more packets. There are lots of things are covered in these article and its helpfull when wants to understand React native deep concepts but for now we have lot more libraries that comes with pre-builted code that help us to us functionality directly on our App. 
+
+
+{\bf\item Hugo Brito,\lq\lq Mobile Development in Swift, Java and React Native: Comparing Different Technologies with React Native\rq\rq , IEEE, 2019}
 \\
-These Article is written for help to understand the backend code of React Native. In these Reflux Patterns are explained in very different and Easier manar so that if react native developers whants to implement somethings they get help from these pattern not only these article also tells about Redux the big state management tools to manage states Many of the industries are actually working on it.
-So These Articles also tells about how to use redux? How the you can debugg your apps in android phone using deugging mode. But we can implement some libraries for easy development and we can import statements to import more packets. There are lots of things are covered in these article and its helpfull when wants to understand React native deep concepts but for now we have lot more libraries that comes with pre-builted code that help us to us functionality directly on our App.
-
-
-\newpage
-\subsection*{Mobile Development in Swift, Java and React Native}
-\addcontentsline{toc}{subsection}{Mobile Development in Swift, Java and React Native}
+\\
 \begin{tabular}{ |c | m{2.5cm} | m{2cm}| c | m{2cm} | m{2cm} | c | }
 
   \hline
@@ -92,13 +130,11 @@ So These Articles also tells about how to use redux? How the you can debugg your
 \end{tabular}
 \\
 \\
+ We know that there are so many technologies are present in the market for creating Android and IOS apps but which is best and how we can found it? The perticular question is solved in these article. while we are creating a Native App we are using Java For android and swift for IOS and to create a both platform application we are using React Native. In native application we found that the performnce of it is really good as compaire to react native but to use more and different library  we need to write to much heavy code and these may be possible that library not presented so we need to manage lots more things to get that functionality done in native apps so that React native solve our problem my suggestion will be like go for react native its saves your time for writing the code which already present and we can compair with these react native with some more cross-plaforms like flutter  and Ionic. 
+
+{\bf\item Anabela Gomes,\lq\lq JavaScript in Mobile Applications: React native vs Ionic vs NativeScript vs Native Development\rq\rq, IEEE, 2018}
 \\
-We know that there are so many technologies are present in the market for creating Android and IOS apps but which is best and how we can found it? The perticular question is solved in these article. while we are creating a Native App we are using Java For android and swift for IOS and to create a both platform application we are using React Native. In native application we found that the performnce of it is really good as compaire to react native but to use more and different library  we need to write to much heavy code and these may be possible that library not presented so we need to manage lots more things to get that functionality done in native apps so that React native solve our problem my suggestion will be like go for react native its saves your time for writing the code which already present and we can compair with these react native with some more cross-plaforms like flutter  and Ionic.
-
-\newpage
-\subsection*{JavaScript in Mobile Applications: React native vs Ionic vs NativeScript vs Native Development}
-\addcontentsline{toc}{subsection}{JavaScript in Mobile Applications: React native vs Ionic vs NativeScript vs Native Development}
-
+\\
 \begin{tabular}{ |c | m{2.5cm} | m{2cm}| c | m{2cm} | m{2cm} | c | }
 
   \hline
@@ -110,13 +146,12 @@ We know that there are so many technologies are present in the market for creati
 \end{tabular}
 \\
 \\
-\\
-These Article Also Compare React native with other technologies but Its Compare with cross-platforms mean the other platforms also work as like a react native and by these comparison we are getting best idea to which tech is used for what kind of projects? and you can pick a grate platform. In lot more cases the tech you pick is not suitable for that perticular project may be the other tech performs better then your's in that case you need to use another tech for it that explaination is inside these article but my opinion will be to improve or add other platforms to like flutter and again compare with it because flutter is also a greate tool it usages a dart programming language and its more over an object oriented programming language  so the code you are writing is in classes and object its not a functional base thats the big disadvantage of flutter but its also quite popular in the market now.
-
+ These Article Also Compare React native with other technologies but Its Compare with cross-platforms mean the other platforms also work as like a react native and by these comparison we are getting best idea to which tech is used for what kind of projects? and you can pick a grate platform. In lot more cases the tech you pick is not suitable for that perticular project may be the other tech performs better then your's in that case you need to use another tech for it that explaination is inside these article but my opinion will be to improve or add other platforms to like flutter and again compare with it because flutter is also a greate tool it usages a dart programming language and its more over an object oriented programming language  so the code you are writing is in classes and object its not a functional base thats the big disadvantage of flutter but its also quite popular in the market now.
 \newpage
-\subsection*{Exploration of React Native Framework in designing a Rule-Based Application for healthy lifestyle education}
-\addcontentsline{toc}{subsection}{Exploration of React Native Framework in designing a Rule-Based Application for healthy lifestyle education}
 
+{\bf\item Anik Hanifatul Azizah,\lq\lq Exploration of React Native Framework in designing a Rule-Based Application for healthy lifestyle education \rq\rq, IEE, 2021}
+\\
+\\
 \begin{tabular}{ |c | m{2.5cm} | m{2cm}| c | m{2cm} | m{2cm} | c | }
 
   \hline
@@ -128,26 +163,73 @@ These Article Also Compare React native with other technologies but Its Compare 
 \end{tabular}
 \\
 \\
-\\
 As  we know in these world is Going to faster tech world and now healthy lifestyles is going to be little bit hard for us to find so that these article tells us how we can live a helthy life styles using React Native Rule-Based Application these application comes with some basic rools so that excising and drinking and some more task can be done throught out the notification functionality and some more functionality so that lifestyle becomes technical healthy. But After read these article i think that there are more things we can improve on to it like exerise videos and basic audio file for stress free brain and some more things but all the way these is greate things to work on it and for the healthy lifestyle these ideal is greate to work on it.
-
-\newpage
-\section*{Problem Statement}
-\addcontentsline{toc}{section}{Problem Statement}
-\subsection*{What is Problem?}
-\addcontentsline{toc}{subsection}{What is Problem?}
-\qquad In real industries we found that when application project started client requirement is App should be work on cross-plaforms means it can able to run on android as well as ios devices so if you try to understand this thing is little bit complecated for development first developers needs to write code for android and then he also need to write there codes for ios in both different languages so company need to hire developers for android as well as ios so that he can complete the clients project in efficient manor but some how the features which you see in IOS not available in Android in that case android app become littel bit different from ios app not the UI but feature are different and thats the big reason for big compnies are switching to cross-platform development I am not saying that cross-platform is best that other native platforms there is advantages  of native platforms as well but with the cross-platform application companies can save his time also they don't need hire different developers for different platforms so its saves money as well. There are some Companies who are working on native platforms as well because not every client say i need cross-platform apps some clients are only need android app to be developed in that case to make app more fast companies prefer to go for native platforms like Kotlin or Java. Also Same as IOS developers they work on objective-c and Swift for creating apps for IOS devices so companies are also hire them as well now why companies is are hiring native developers? if the cross-platform technology is here? as i said native apps have there own advantages like you can customize everything which you like and create interface as you want. but in cross-platform development there are so many things are already customized for you so you can't change it, but the feature its provide is really good for designing it can create better UI as compare to Native apps ( It's my Personal Exeperience ) so Now Problem is How React Native can Solve our Problem? Is it Can or Not.
-
+\end{enumerate}
 \newpage
 
+\chapter{Proposed System}
+\section{Problem Statement}
+ In real industries we found that when application project started client requirement is App should be work on cross-plaforms means it can able to run on android as well as ios devices so if you try to understand this thing is little bit complecated for development first developers needs to write code for android and then he also need to write there codes for ios in both different languages so company need to hire developers for android as well as ios so that he can complete the clients project in efficient manor but some how the features which you see in IOS not available in Android in that case android appx become littel bit different from ios app not the UI but feature are different and thats the big reason for big compnies are switching to cross-platform development I am not saying that cross-platform is best that other native platforms there is advantages  of native platforms as well but with the cross-platform application companies can save his time also they don't need hire different developers for different platforms so its saves money as well. There are some Companies who are working on native platforms as well because not every client say i need cross-platform apps some clients are only need android app to be developed in that case to make app more fast companies prefer to go for native platforms like Kotlin or Java. Also Same as IOS developers they work on objective-c and Swift for creating apps for IOS devices so companies are also hire them as well now why companies is are hiring native developers? if the cross-platform technology is here? as i said native apps have there own advantages like you can customize everything which you like and create interface as you want.
 
+\newpage
 
-\subsection*{React Native can Solve our Problem?}
-\addcontentsline{toc}{subsection}{React Native can Solve our Problem?}
-React Native is More based on ReactJS which is Frontend framwork and React Native is Usage Similar type of syntax in react native so 
+\section{System Architechture}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.75\textwidth]{arch}
+\end{figure}
+ React Native is a good solution if you’re looking for a way to build a scalable application that would run on several platforms fast. Thus, you can start with an MVP, attract the first users, and get to the market earlier than your competitors manage to do the same. As for now, it remains the core tech for building cross-platform software. However, the React Native architecture is not perfect and requires further improvement. If you take a look at React Native layout, you’ll see that the framework uses a Bridge to communicate with native modules, which often creates a queue as these two sides are unaware of each other. Such a process might create performance limitations that negatively affect user experience. To address these and other challenges of the React Native layout, the team introduces regular updates, aiming to streamline developers’ experience. The latest massive update took place on July 6, 2020, when the team at Facebook redesigned the entire error, warning, and log system by introducing an updated LogBox. Such updates are frequent to come. So, if you have React Native in your tech stack, be sure the framework will evolve and become more native and developer-friendly than it was before.
 
+\newpage
 
+\chapter{Methodology}
+\section{Algorithm}
+\subsection{Diffing algorithm}
 
+Before updating the user interface, React uses a reconciliation algorithm to compare the new tree with the most recent tree to find out the most efficient way to update the user interface. The user interface is not necessary a browser interface but can be android/IOS application (React native or React IOS).
 
+\subsection{Heuristic algorithms}
+A heuristic algorithm is one that is designed to solve a problem in a faster and more efficient fashion than traditional methods by sacrificing optimality, accuracy, precision, or completeness for speed. Heuristic algorithms often times used to solve NP-complete problems, a class of decision problems.
+
+\subsection{React Fiber}
+React Fiber is a completely backward-compatible rewrite of the old reconciler. This new reconciliation algorithm from React is called Fiber Reconciler. The name comes from fiber, which it uses to represent the node of the DOM tree. We will go through fiber in detail in later sections.
+
+\newpage
+
+\section{Components}
+There are some components are built in and it presented in React Native -
+\subsection{Basic Components}
+In the Basic Components we see basic tags for creating user Interface in our application where you can build some stuff that really makes importance of our app.
+\begin{itemize}
+  \item View.
+  \item Text.
+  \item Image.
+  \item TextInput.
+\end{itemize}
+
+\subsection{Android Components}
+We know that react native is based on JS Bundle so to convert JS bundle into real android app you need components Those components are help to achive some basic things in android  we just need to use them in out code. The components are  :- 
+\\
+\begin{itemize}
+  \item BackHandler.
+  \item DrawLayoutAndroid.
+  \item PermissionsAndroid.
+  \item ToastAndroid.
+\end{itemize}
+
+\subsection{IOS components}
+If in react native android components are present then ios components are also for ios development if we try to create app for both platforms it require to follow every rule of both platforms so that we can achive a best output.
+
+\begin{itemize}
+  \item SafeAreaView.
+  \item ActionSheetIOS.
+\end{itemize}
+
+\newpage
+
+\chapter{Result Analysis}
+\section{Comparison of Existing System and Proposed System}
+\subsection{ Existing System}
+In The React Native we are bundling JS Code and Converting into Java Code for creating android app and the existing system takes more time to do dubugging but yes its also provide a hot reload functionality as well but to do an bundle task its require so much time so that was a big problem?
 
 \end{document}
