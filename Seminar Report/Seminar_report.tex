@@ -6,6 +6,7 @@
 \usepackage {acronym}
 \usepackage{multirow}
 %\usepackage{psfrag}
+% preamble
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
@@ -19,10 +20,148 @@
 \usetikzlibrary{calc}
 \usepackage[T1]{fontenc}
 \usepackage{graphicx}
+\usepackage{import}
 \graphicspath{ {/} }
+\usepackage[english]{babel}
+\usepackage{ragged2e}
+\usepackage{blindtext}
+\usepackage{stfloats}
+
 
 
 \begin{document}
+
+
+\begin{center}
+
+{\Large A Seminar Report}\\
+\setstretch{2.00}
+{\Large On}
+\\
+\setstretch{2.00}
+{\large \textbf{\lq\lq CROSS-PLATFORM APPLICATION DEVELOPMENT USING REACT NATIVE\rq\rq} }
+\\
+\setstretch{2.00}
+{\Large \textit{By}}
+\\
+\setstretch{2.00}
+{\Large \textbf{Sanket Sabale \\ (Seat No. S190944226)}}
+\\
+\setstretch{2.00}
+{\large \textit{Under the guidance of}}
+\\
+\setstretch{2.00}
+{\Large \textbf{Prof. A. M. Dalvi} }
+\\
+\setstretch{2.60}
+{\Large \textbf{T.E. (COMPUTER ENGINEERING)}}
+\\
+\setstretch{2.00}
+{\large \textbf{2021-22 (Semester I)}}
+\\
+\setstretch{1.60}
+ \includegraphics[width=0.25\textwidth]{logo}
+\\
+\setstretch{1.60}
+{\large \textbf{DEPARTMENT OF COMPUTER ENGINEERING}}
+\\
+\setstretch{2.60}
+{\small SRTCT's Suman Ramesh Tulsiani Technical Campus - Faculty of Engineering}
+\\
+\setstretch{2.00}
+{\small Old Mumbai - Pune Highway, Khamshet,}
+\\
+\setstretch{2.00}
+{\small Pune, Maharashtra 410405}
+
+\newpage
+
+ \includegraphics[width=0.15\textwidth]{logo}
+\\
+\setstretch{1.20}
+{\Large SRTCT's Suman Ramesh Tulsiani Technical Campus - Faculty of Engineering}
+\\
+\setstretch{1.20}
+{\small Old Mumbai - Pune Highway, Khamshet,}
+\\
+\setstretch{1.20}
+{\small Pune, Maharashtra 410405}
+\\
+\setstretch{2.00}
+{\large \textbf{DEPARTMENT OF COMPUTER ENGINEERING}}
+\\
+\setstretch{2.40}
+{\LARGE \textit{Certificate}}
+\\
+\setstretch{2.40}
+{\large This is to certify that the seminar report entitled}
+\\
+\setstretch{2.00}
+{\large \textbf{ \textcolor{red}{Cross-Platform Application in React Native}}}
+\\
+\setstretch{2.00}
+{\large Submitted By}
+\\
+\setstretch{1.80}
+{\large \textbf{Sanket Sabale (Seat No. S190944226)}}
+\\
+\setstretch{1.80}
+\begin{FlushLeft}
+ is approved by Prof. A. M. Dalvi for submission. It is certified further that, to the
+best of my knowledge, the report represents work carried out by my
+students as the partial fulfillment for T.E. Computer Engineering
+(Semester I) Seminar and Technical communication Laboratory Work as 
+prescribed by the University of Pune for the academicyear 2021-22.
+\\
+
+\end{FlushLeft}
+\begin{figure*}[b]
+\begin{tabular}{ c c c }
+ \textbf{[ Prof. A. M. Dalvi ]} & \textbf{[ Prof. S. S. Bhoite ]} &  \textbf{[ Prof. A. M. Dalvi ]}  \\ 
+ STCL Guide & STCL Co-ordinator & Head of Department     
+\end{tabular}
+\\
+\setstretch{0.80}
+\begin{FlushLeft}
+{\small Place: Pune }\\
+{\small Date: \today }
+\end{FlushLeft}
+\end{figure*}
+
+\newpage
+
+\pagebreak
+\hspace{0pt}
+\vfill
+{\LARGE \textbf{\textit{Acknowledgement}}}
+
+\begin{FlushLeft}
+{\large \textit{
+\quad We would like to express our gratitude to all those who helped us to complete
+this work. We want to thank our guide Prof. A. M. Dalvi for his continuous help and 
+generous assistance. He helped in a broad range of issues from giving us
+direction, helping to find the solutions, outlining the requirements and always
+having the time to see us.
+}}
+\\
+
+\end{FlushLeft}
+
+\setstretch{4.00}
+
+\begin{FlushRight}
+
+{\large \textbf{Sanket Sabale}}
+
+\end{FlushRight}
+
+
+
+\vfill
+\hspace{0pt}
+\pagebreak
+\end{center}
+
 
 \newpage 
 \pagenumbering{arabic}
@@ -43,6 +182,8 @@
 \rfoot{}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 
 \tableofcontents
 \newpage
@@ -78,80 +219,26 @@ Also React Native is doing a greate job to beat the other alternatives.We all kn
 
 \chapter{Literature Survey}
 
-\begin{enumerate}
-	 {\bf\item  Xingwei Zhou,\lq\lq React Native Based Mobile App for Online Experimentation: Helps Student To  get Practicle Exprerince Through 3D\rq\rq,IEEE, 2020}\\
-\\
+
 \begin{tabular}{ |c | m{2.5cm} | m{2cm}| c | m{2cm} | m{2cm} | c | }
 
   \hline
   sr.no & Title of Page & Author & Published Year & Finding & Future Scope  \\ 
   \hline
   1 & React Native Based Mobile App for Online Experimentation & Xingwei Zhou etal. &  2020 & IEEE Xplore & Helps Student To  get Practicle Exprerince Through 3D \\
+  \hline
+  2 & React Native Supplements & Paul etal. &  2019 & Springer & Guide For Developers \\ 
+\hline
+    3 &  Mobile Development in Swift, Java and React Native & Hugo Brito etal. &  2019 & IEEE Xplore & Comparing Technologies \\
 \hline 
-  
-\end{tabular}
-\\
-\\
-In These Article We Found That Author is Telling us That How a Laboratory can be an online tool for everyones use by react native so basically The Concept is there are so many collages which don't have 
-practical lab so we can create an app for those student so that he can practice on 3D images and Touchable Effects its looks similar to real practice in it so we can solve a problem of Practical labs in all collages but there some things That i like to update is that we can improve thos UI for students and every single branch needs there own space for practice it also we can include some of test exams so that teacher can see knowledge of student or What he gain? so far. 
-
-\newpage
-
-
-{\bf\item Paul,\lq\lq React Native Supplements : Best Guide for Developers who try to create Custom Components\rq\rq,Springer,2019}\\
-
-\begin{tabular}{ |c | m{2.5cm} | m{2cm}| c | m{2cm} | m{2cm} | c | }
-
- \hline
-  sr.no & Title of Page & Author & Published Year & Finding & Future Scope  \\ 
-  \hline
-  2 & React Native Supplements & Paul etal. &  2019 & Springer & Guide For Developers \\
-\hline 
-  
-\end{tabular}
-\\
-\\
-
- These Article is written for help to understand the backend code of React Native. In these Reflux Patterns are explained in very different and Easier manar so that if react native developers whants to implement somethings they get help from these pattern not only these article also tells about Redux the big state management tools to manage states Many of the industries are actually working on it.
-So These Articles also tells about how to use redux? How the you can debugg your apps in android phone using deugging mode. But we can implement some libraries for easy development and we can import statements to import more packets. There are lots of things are covered in these article and its helpfull when wants to understand React native deep concepts but for now we have lot more libraries that comes with pre-builted code that help us to us functionality directly on our App. 
-
-
-{\bf\item Hugo Brito,\lq\lq Mobile Development in Swift, Java and React Native: Comparing Different Technologies with React Native\rq\rq , IEEE, 2019}
-\\
-\\
-\begin{tabular}{ |c | m{2.5cm} | m{2cm}| c | m{2cm} | m{2cm} | c | }
-
-  \hline
-  sr.no & Title of Page & Author & Published Year & Finding & Future Scope  \\ 
-  \hline
-  3 &  Mobile Development in Swift, Java and React Native & Hugo Brito etal. &  2019 & IEEE Xplore & Comparing Technologies \\
-\hline 
-  
-\end{tabular}
-\\
-\\
- We know that there are so many technologies are present in the market for creating Android and IOS apps but which is best and how we can found it? The perticular question is solved in these article. while we are creating a Native App we are using Java For android and swift for IOS and to create a both platform application we are using React Native. In native application we found that the performnce of it is really good as compaire to react native but to use more and different library  we need to write to much heavy code and these may be possible that library not presented so we need to manage lots more things to get that functionality done in native apps so that React native solve our problem my suggestion will be like go for react native its saves your time for writing the code which already present and we can compair with these react native with some more cross-plaforms like flutter  and Ionic. 
-
-{\bf\item Anabela Gomes,\lq\lq JavaScript in Mobile Applications: React native vs Ionic vs NativeScript vs Native Development\rq\rq, IEEE, 2018}
-\\
-\\
-\begin{tabular}{ |c | m{2.5cm} | m{2cm}| c | m{2cm} | m{2cm} | c | }
-
-  \hline
-  sr.no & Title of Page & Author & Published Year & Finding & Future Scope  \\ 
-  \hline
  4 &  JavaScript in Mobile Applications: React native vs Ionic vs NativeScript vs Native Development & Anabela Gomes etal. &  2018 & IEEE Xplore & Comparing Technologies \\
 \hline 
-  
+
 \end{tabular}
 \\
 \\
- These Article Also Compare React native with other technologies but Its Compare with cross-platforms mean the other platforms also work as like a react native and by these comparison we are getting best idea to which tech is used for what kind of projects? and you can pick a grate platform. In lot more cases the tech you pick is not suitable for that perticular project may be the other tech performs better then your's in that case you need to use another tech for it that explaination is inside these article but my opinion will be to improve or add other platforms to like flutter and again compare with it because flutter is also a greate tool it usages a dart programming language and its more over an object oriented programming language  so the code you are writing is in classes and object its not a functional base thats the big disadvantage of flutter but its also quite popular in the market now.
-\newpage
 
-{\bf\item Anik Hanifatul Azizah,\lq\lq Exploration of React Native Framework in designing a Rule-Based Application for healthy lifestyle education \rq\rq, IEE, 2021}
-\\
-\\
+\newpage
 \begin{tabular}{ |c | m{2.5cm} | m{2cm}| c | m{2cm} | m{2cm} | c | }
 
   \hline
@@ -161,7 +248,37 @@ So These Articles also tells about how to use redux? How the you can debugg your
 \hline 
   
 \end{tabular}
+
+\begin{enumerate}
+	 {\bf\item  Xingwei Zhou,\lq\lq React Native Based Mobile App for Online Experimentation: Helps Student To  get Practicle Exprerince Through 3D\rq\rq,IEEE, 2020}\\
 \\
+In These Article We Found That Author is Telling us That How a Laboratory can be an online tool for everyones use by react native so basically The Concept is there are so many collages which don't have 
+practical lab so we can create an app for those student so that he can practice on 3D images and Touchable Effects its looks similar to real practice in it so we can solve a problem of Practical labs in all collages but there some things That i like to update is that we can improve thos UI for students and every single branch needs there own space for practice it also we can include some of test exams so that teacher can see knowledge of student or What he gain? so far. 
+
+\newpage
+
+
+{\bf\item Paul,\lq\lq React Native Supplements : Best Guide for Developers who try to create Custom Components\rq\rq,Springer,2019}\\
+
+
+
+ These Article is written for help to understand the backend code of React Native. In these Reflux Patterns are explained in very different and Easier manar so that if react native developers whants to implement somethings they get help from these pattern not only these article also tells about Redux the big state management tools to manage states Many of the industries are actually working on it.
+So These Articles also tells about how to use redux? How the you can debugg your apps in android phone using deugging mode. But we can implement some libraries for easy development and we can import statements to import more packets. There are lots of things are covered in these article and its helpfull when wants to understand React native deep concepts but for now we have lot more libraries that comes with pre-builted code that help us to us functionality directly on our App. 
+
+
+{\bf\item Hugo Brito,\lq\lq Mobile Development in Swift, Java and React Native: Comparing Different Technologies with React Native\rq\rq , IEEE, 2019}\\
+
+ We know that there are so many technologies are present in the market for creating Android and IOS apps but which is best and how we can found it? The perticular question is solved in these article. while we are creating a Native App we are using Java For android and swift for IOS and to create a both platform application we are using React Native. In native application we found that the performnce of it is really good as compaire to react native but to use more and different library  we need to write to much heavy code and these may be possible that library not presented so we need to manage lots more things to get that functionality done in native apps so that React native solve our problem my suggestion will be like go for react native its saves your time for writing the code which already present and we can compair with these react native with some more cross-plaforms like flutter  and Ionic. 
+
+\newpage
+
+{\bf\item Anabela Gomes,\lq\lq JavaScript in Mobile Applications: React native vs Ionic vs NativeScript vs Native Development\rq\rq, IEEE, 2018}
+\\
+
+ These Article Also Compare React native with other technologies but Its Compare with cross-platforms mean the other platforms also work as like a react native and by these comparison we are getting best idea to which tech is used for what kind of projects? and you can pick a grate platform. In lot more cases the tech you pick is not suitable for that perticular project may be the other tech performs better then your's in that case you need to use another tech for it that explaination is inside these article but my opinion will be to improve or add other platforms to like flutter and again compare with it because flutter is also a greate tool it usages a dart programming language and its more over an object oriented programming language  so the code you are writing is in classes and object its not a functional base thats the big disadvantage of flutter but its also quite popular in the market now.
+
+
+{\bf\item Anik Hanifatul Azizah,\lq\lq Exploration of React Native Framework in designing a Rule-Based Application for healthy lifestyle education \rq\rq, IEE, 2021}
 \\
 As  we know in these world is Going to faster tech world and now healthy lifestyles is going to be little bit hard for us to find so that these article tells us how we can live a helthy life styles using React Native Rule-Based Application these application comes with some basic rools so that excising and drinking and some more task can be done throught out the notification functionality and some more functionality so that lifestyle becomes technical healthy. But After read these article i think that there are more things we can improve on to it like exerise videos and basic audio file for stress free brain and some more things but all the way these is greate things to work on it and for the healthy lifestyle these ideal is greate to work on it.
 \end{enumerate}
@@ -230,6 +347,15 @@ If in react native android components are present then ios components are also f
 \chapter{Result Analysis}
 \section{Comparison of Existing System and Proposed System}
 \subsection{ Existing System}
-In The React Native we are bundling JS Code and Converting into Java Code for creating android app and the existing system takes more time to do dubugging but yes its also provide a hot reload functionality as well but to do an bundle task its require so much time so that was a big problem?
+In The React Native we are bundling JS Code and Converting into Java Code for creating android app and the existing system takes more time to do dubugging but yes its also provide a hot reload functionality as well but to do an bundle task its require so much time so that was a big problem? Its Like Restarting bundling, adding more third party library its become so much hard to do in React natives existing system it also takes to much space on our system so it can be little hard say these is greate system to work.
 
+\subsection{Proposed System}
+We know in the existing system our time and space both are take high value now i suggest to make in different way by using expo app in these expo app we dont need to worry about bundling things for ios and android its done by the expo app what we need to do is just install expo app connect with our react native project these will save our time and space. for starting point we need to install Expo app on our testing device which may ios or android expo support both platform after that once you run your code application will run on Expo app itself and you will see the result just to debug and create apk file we need to go for server and download some files in expo so that you can get real world app in you system.
+
+\newpage
+
+\section{Advantages}
+
+\subsection{Creating Both Platform Application with Same Code Base}
+In React Native World we dont need to learn different programming language for different platform you just need to use javascript and react framwork to create app for both platform thats big advantage of React Native.
 \end{document}
