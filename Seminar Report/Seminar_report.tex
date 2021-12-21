@@ -26,14 +26,14 @@
 \usepackage{ragged2e}
 \usepackage{blindtext}
 \usepackage{stfloats}
-
+\usepackage[utf8]{inputenc}
 
 
 \begin{document}
 
 
 \begin{center}
-
+\pagenumbering{gobble}
 {\Large A Seminar Report}\\
 \setstretch{2.00}
 {\Large On}
@@ -184,7 +184,7 @@ having the time to see us.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-
+\pagenumbering{roman}
 \tableofcontents
 \newpage
 
@@ -195,6 +195,7 @@ React Native is an Open-Source UI software Framework created by Meta Platforms, 
 
 \newpage
 
+\pagenumbering{arabic}
 \chapter{INTRODUCTION}
 \section{Introduction}
 
@@ -358,4 +359,27 @@ We know in the existing system our time and space both are take high value now i
 
 \subsection{Creating Both Platform Application with Same Code Base}
 In React Native World we dont need to learn different programming language for different platform you just need to use javascript and react framwork to create app for both platform thats big advantage of React Native.
+
+\subsection{Reusable Components}
+Most Useful feature in ReactJs that also works in React Native where you can create a specific component in different file and that you can use it enywhere where you want  it just lets say you are building a button and you want that button on multiple pages so for that you dont need write code for different pages you just need to put it in one file in functional formate and call into another file where you want that button thats it.
+
+
+\subsection{ Hot Reload }
+Hot Reloading, based on Hot Module Replacement (HMR), was introduced after the first reloading process was conducted. While retaining the features and function sequence, Hot Reloading has an added advantage after saving changes in the file, an HMR intermediator then proceeds to keep the updated files into the required places as the app continues to operate in the background. The primary advantage of using Hot Reloading lies in its ability to sanction changes in the source code in a fashion that lets the developer view the codes, even if he does not recompile the app.
+
+\subsection{Cost-Effective Solution}
+The benefit of code reusability offered by React Native helps diminish costs of app creation to a large extent. With this framework, coders need not write separate codes for iOS and Android and can simply code the application in the existing language. This results in the need for a smaller team of native developers for all app development businesses and ensures a sharp reduction in project completion time aided by the competence of the React Native community.
+
+\newpage
+
+\section{Disadvantages}
+
+\subsection{Difficult to Learn}
+Learning React Native can be very challenging, especially for freshers in app development who might find creating applications with JSX in the JavaScript syntax extension difficult. Besides React Native, app developers must know native app coding too. React Native libraries with native bridges for features like maps, videos, etc. needs developers with in-depth knowledge, if not expertise, of three platforms. Developers who don’t have the knowledge of multiple platforms can find fixing some inconsistencies in both iOS and Android platforms quite difficult. Hence , the learning curve is steep and may delay development or increase timelines.
+
+\subsection{Low Security}
+React Native is a JavaScript library and also an open source framework, due to which developers often face the challenge of keeping the app secure. JavaScript is quite fragile, and this results in some developers experiencing low levels of safety. When making apps that need extra layers of security, such as banking or finance applications, you need to be extra cautious. Otherwise, malicious code snippets can pose a critical threat to the app’s safety features. This is why developers sometimes avoid building financial apps on React Native.
+
+\subsection{Complex UI}
+According to many coders, React Native isn’t the right choice for apps that need complex gestures, screen transitions, animations, or require many interactions. Despite React Native having a gesture responder system, coders might continue to struggle with screens with complicated gestures. This is because iOS and Android touch subsystems are so different from each other, that using a unified API might be challenging.
 \end{document}
